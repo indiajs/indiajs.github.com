@@ -10,7 +10,7 @@ tagline: Internet of Things
   <div class="span8">
   	{% for post in site.posts %}
 	  <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-	  <small><span>{{ post.date | date_to_string }}</span> written by <strong>Vishwas Sharma</strong></small>
+	  <small>Written by <strong>Vishwas Sharma</strong> on <span>{{ post.date | date_to_string }}</span></small>
 	  <hr class="soften">
 	  <p>{{ post.content }}</p>
 	  <hr class="soften">
